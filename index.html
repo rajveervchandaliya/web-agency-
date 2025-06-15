@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legitsoft</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jockey+One&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+    <main class="bg-black w-full">
+        <div class="hero relative w-full h-screen">
+            <nav class="w-full  h-[4rem] flex items-center justify-between px-8 uppercase border-b-1 border-white">
+                <div class="logo text-white text-[2rem] font-bold uppercase ">
+                    <span class="text-blue-600">Legitsoft</span> Lab
+                </div>
+                <ul class="flex space-x-8 text-white text-[1.2rem] h-full items-center">
+                    <li><a href="#" class="hover:text-blue-600 transition-colors">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition-colors">Projects</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition-colors">Team</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition-colors">Careers</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition-colors">Blog</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition-colors">About us</a></li>
+                </ul>
+                <button
+                    class="bg-blue-600 text-white py-2 px-5 rounded-full uppercase font-bold hover:text-blue-600 bg-black transition-colors">Let's
+                    Connect</button>
+
+            </nav>
+            <div
+                class="hero-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center gap-4">
+                <p class="text-gray-400 text-[1rem] uppercase ">Software | Websites | Applications Developer & Designer
+                    Since 2016.</p>
+                <h1 class="text-white text-[4rem] font-bold uppercase leading-none">Welcome to <span
+                        class="text-blue-600">Legitsoft</span> Laboratory</h1>
+                <p class="text-gray-400 text-[1.5rem] uppercase ">We craft <span class="text-blue-600">web &
+                        android</span> apps at Legitsoft</p>
+                <button class="bg-blue-600 text-white py-2 px-5 rounded-full uppercase font-bold ">tell me more</button>
+            </div>
+            <div
+                class="marquee absolute bottom-20 left-1/2 transform -translate-x-1/2 w-[50%] bg-blue-600 h-[4rem] bg-black flex items-center overflow-hidden">
+            </div>
+         </div>
+
+    </main>
 </body>
+
 </html>
