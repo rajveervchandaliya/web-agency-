@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legitsoft</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jockey+One&display=swap" rel="stylesheet">
-
+   
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <main class="bg-black w-full px-10  flex flex-col items-center justify-center gap-4">
+    <main class="bg-black w-full px-10  flex flex-col items-center justify-center gap-4 main">
+        <div class="cursor h-[30px] w-[30px] rounded-full bg-blue-800 fixed  mix-blend-difference  top-0 ml-[-12px] mt-[-12px] "></div>
         <div class="hero relative w-full h-screen">
             <nav class="w-full  h-[4rem] flex items-center justify-between px-8 uppercase border-b-1 border-white">
                 <div class="logo text-white text-[2rem] font-bolder uppercase ">
@@ -29,23 +31,29 @@
                     <li><a href="#" class="hover:text-blue-600 transition-colors">About us</a></li>
                 </ul>
                 <button
-                    class="bg-blue-600 text-white py-2 px-5 rounded-full uppercase font-bold hover:text-blue-600 bg-black transition-colors">Let's
+                    class="bg-transparent border-3 border-blue-600 text-white py-2 px-5 rounded-full uppercase font-bold hover:bg-blue-600 transition-colors">Let's
                     Connect</button>
 
             </nav>
             <div
-                class="hero-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center gap-4">
-                <p class="text-gray-400 text-[1rem] uppercase ">Software | Websites | Applications Developer & Designer
+                class="hero-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center gap-4 w-full">
+                <p class="text-gray-400 text-[1.5rem] uppercase ">Software | Websites | Applications Developer & Designer
                     Since 2016.</p>
-                <h1 class="text-white text-[3.8rem] font-bold uppercase leading-none">Welcome to <span
-                        class="text-blue-600">Legitsoft</span> Laboratory</h1>
-                <p class="text-gray-400 text-[1.5rem] uppercase ">We craft <span class="text-blue-600">web &
+                <h1 class="text-white text-[4.8rem] font-bold uppercase leading-none">Welcome to <span
+                        class="text-blue-600">Legitsoft</span><br> Laboratory</h1>
+                <p class="text-gray-400 text-[2rem] uppercase ">We craft <span class="text-blue-600">web &
                         android</span> apps at Legitsoft</p>
-                <button class="bg-blue-600 text-white py-2 px-5 rounded-full uppercase font-bold ">tell me more</button>
+                <button class="bg-blue-600 text-white py-2 px-5 rounded-full uppercase font-bold hover:bg-transparent border-3 border-blue-600 text-white ">tell me more</button>
             </div>
-            <div
-                class="marquee absolute bottom-20 left-1/2 transform -translate-x-1/2 w-[50%] bg-blue-600 h-[4rem] bg-black flex items-center overflow-hidden">
-            </div>
+            <!-- <div
+                class="marquee w-full bg-blue-600 absolute bottom-20 left-1/2 transform -translate-x-1/2 w-[50%]  h-[4rem] bg-black flex items-center overflow-hidden text-blue-600">
+                <marquee width="90%" direction="left" height="50px">
+                    <h2 class="text-[2rem]">We create websites that stand out</h2>
+                    <h2 class="text-[2rem]">We create websites that stand out</h2>
+                </marquee>
+                <div class="absolute h-full w-[80px] fade"></div>
+                <div class="absolute h-full w-[80px] fade-r "></div>
+            </div> -->  
         </div>
         <div class="page-2 flex p-[2rem] ">
             <div class="left w-1/2 p-8 flex flex-col h-fit sticky top-0">
@@ -165,47 +173,52 @@
                 </div>
                 <div class="card w-[31%]  h-full  flex flex-col justify-center p-2 gap-4 ">
                     <div class="img h-full bg-black ">
-                        <img src="./images/webdev.webp" alt="oo" class="w-full h-full object-cover rounded-lg">
+                        <img src="https://legitsoft.in/storage/photos/1/whatwedo/mobdev.jpg" alt="oo"
+                            class="w-full h-full object-cover rounded-lg">
                     </div>
-                    <h3 class="text-white text-[1.5rem] uppercase">Web development</h3>
-                    <p class="text-gray-400 text-[.9rem]">We develop various web applications with administrator panel,
-                        dashboard, user management.</p>
+                    <h3 class="text-white text-[1.5rem] uppercase">Mobile Applications</h3>
+                    <p class="text-gray-400 text-[.9rem]">We develop iOS, Android mobile applications
+                        along with dashboard, activity management
+                        system.</p>
                     <button class="bg-blue-600 text-white py-2 px-9 rounded w-fit">In detail</button>
                 </div>
                 <div class="card w-[31%]  h-full  flex flex-col justify-center p-2 gap-4 ">
                     <div class="img h-full bg-black ">
-                        <img src="./images/webdev.webp" alt="oo" class="w-full h-full object-cover rounded-lg">
+                        <img src="https://legitsoft.in/storage/photos/1/whatwedo/ui.jpg" alt="oo"
+                            class="w-full h-full object-cover rounded-lg">
                     </div>
-                    <h3 class="text-white text-[1.5rem] uppercase">Web development</h3>
-                    <p class="text-gray-400 text-[.9rem]">We develop various web applications with administrator panel,
-                        dashboard, user management.</p>
+                    <h3 class="text-white text-[1.5rem] uppercase">UI UX</h3>
+                    <p class="text-gray-400 text-[.9rem]">We process User Interface as well as User
+                        Experience as per the client requirement.</p>
                     <button class="bg-blue-600 text-white py-2 px-9 rounded w-fit">In detail</button>
                 </div>
                 <div class="card w-[31%]  h-full  flex flex-col justify-center p-2 gap-4 ">
                     <div class="img h-full bg-black ">
-                        <img src="./images/webdev.webp" alt="oo" class="w-full h-full object-cover rounded-lg">
+                        <img src="https://legitsoft.in/storage/photos/1/whatwedo/entc.jpg" alt="oo"
+                            class="w-full h-full object-cover rounded-lg">
                     </div>
-                    <h3 class="text-white text-[1.5rem] uppercase">Web development</h3>
-                    <p class="text-gray-400 text-[.9rem]">We develop various web applications with administrator panel,
-                        dashboard, user management.</p>
+                    <h3 class="text-white text-[1.5rem] uppercase">Embeded Solutions</h3>
+                    <p class="text-gray-400 text-[.9rem]">PCB Designing and prototyping related all
+                        solutions.</p>
                     <button class="bg-blue-600 text-white py-2 px-9 rounded w-fit">In detail</button>
                 </div>
                 <div class="card w-[31%]  h-full  flex flex-col justify-center p-2 gap-4 ">
                     <div class="img h-full bg-black ">
-                        <img src="./images/webdev.webp" alt="oo" class="w-full h-full object-cover rounded-lg">
+                        <img src="https://legitsoft.in/storage/photos/1/whatwedo/vfx.jpg" alt="oo"
+                            class="w-full h-full object-cover rounded-lg">
                     </div>
-                    <h3 class="text-white text-[1.5rem] uppercase">Web development</h3>
-                    <p class="text-gray-400 text-[.9rem]">We develop various web applications with administrator panel,
-                        dashboard, user management.</p>
+                    <h3 class="text-white text-[1.5rem] uppercase">Video editing vfx</h3>
+                    <p class="text-gray-400 text-[.9rem]">We encourage Visuals, graphics, Video, VFX
+                        development with ease under client descriptions.</p>
                     <button class="bg-blue-600 text-white py-2 px-9 rounded w-fit">In detail</button>
                 </div>
                 <div class="card w-[31%]  h-full  flex flex-col justify-center p-2 gap-4 ">
                     <div class="img h-full bg-black ">
-                        <img src="./images/webdev.webp" alt="oo" class="w-full h-full object-cover rounded-lg">
+                        <img src="./images/consult.png" alt="oo" class="w-full h-full object-cover rounded-lg">
                     </div>
-                    <h3 class="text-white text-[1.5rem] uppercase">Web development</h3>
-                    <p class="text-gray-400 text-[.9rem]">We develop various web applications with administrator panel,
-                        dashboard, user management.</p>
+                    <h3 class="text-white text-[1.5rem] uppercase">Consulting & Strategy</h3>
+                    <p class="text-gray-400 text-[.9rem]">We advise clients on digital trends, user experience, and
+                        long-term growth plans.</p>
                     <button class="bg-blue-600 text-white py-2 px-9 rounded w-fit">In detail</button>
                 </div>
 
@@ -256,26 +269,88 @@
                 <div class="w-full h-[20rem] bg-blue-600 bg relative flex items-center justify-center">
                     <img src="./images/photo-1627637820513-e9d01bde0525.avif" alt="" class="w-full object-cover h-full">
                     <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-                    <div class="absolute text-white text-[2rem] font-bold uppercase flex flex-col items-center justify-center">
+                    <div
+                        class="absolute text-white text-[2rem] font-bold uppercase flex flex-col items-center justify-center">
                         <p class="mt-4 text-[2rem]">Software | Websites | Applications Developer & Designer Since</p>
                         <h3 class="text-[5rem] text-center">2018</h3>
-                        <button class=" px-5 py-2 flex align-center justify-center border-1 border-white"><p class="text-[1.5rem] uppercase">get a quote</p></button>
+                        <button class=" px-5 py-2 flex align-center justify-center border-1 border-white">
+                            <p class="text-[1.5rem] uppercase">get a quote</p>
+                        </button>
+                    </div>
                 </div>
             </div>
-            </div>
         </div>
-        <footer class="w-full h-[20vh] bg-gray-800 flex items-center justify-center">
-            <div class="text-white text-center">
+        <footer class="w-full bg-black-800 rounded-lg flex flex-col">
+            <div class="w-full h-[300px] flex flex-row align-center justify-around">
+                <div class="w-[30%] px-5 py-2 flex flex-col gap-3">
+                    <h3 class="capitalize text-[2rem] pb-1 border-b-1 border-white text-white">in short</h3>
+                    <img src="./images/logo.png" alt="" class="w-[3.5rem]">
+                    <p class="text-gray-400 text-[1.2rem]">We offer the most complete IT services in the country, from
+                        UI/UX to Administrative panel, CMS.</p>
+                    <div class="socials">
+                        <div class="icon flex flex- gap-2">
+                            <a href="https://www.facebook.com/legitsoft/"><img src="./images/icons8-facebook-50.png"
+                                    alt="facebook" class="w-[2rem] h-[2rem]"></a>
+                            <a href="https://www.instagram.com/legitsoft/"><img src="./images/icons8-instagram-48.png"
+                                    alt="instagram" class="w-[2rem] h-[2rem]"></a>
+                            <a href="https://x.com/legitsoft_"><img src="./images/icons8-twitter-bird-48.png"
+                                    alt="Twitter" class="w-[2rem] h-[2rem]"></a>
+                            <a href="https://www.youtube.com/channel/UCIwL7-PBX4BDv1oyWPvpc9Q"><img
+                                    src="./images/icons8-youtube-48.png" alt="youtube" class="w-[2rem] h-[2rem]"></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[25%] px-5 py-2 flex flex-col gap-3">
+                    <h3 class="capitalize text-[2rem] pb-1 border-b-1 border-white text-white">Quick links</h3>
+                    <div class="flex">
+                        <ul class="text-gray-400 text-[1.2rem]">
+                            <li><a href="#" class="hover:text-blue-600 transition-colors">Home</a></li>
+                            <li><a href="#" class="hover:text-blue-600 transition-colors">Projects</a></li>
+                            <li><a href="#" class="hover:text-blue-600 transition-colors">Team</a></li>
+                            <li><a href="#" class="hover:text-blue-600 transition-colors">Careers</a></li>
+                            <li><a href="#" class="hover:text-blue-600 transition-colors">Blog</a></li>
+                            <li><a href="#" class="hover:text-blue-600 transition-colors">About us</a></li>
+                        </ul>
+                        <ul class="text-gray-400 text-[1.2rem] ml-8">
+                            <li><a href="#" class="hover:text-blue-600 transition-colors">Contact</a></li>
+                            <li><a href="#" class="hover:text-blue-600 transition-colors">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-blue-600 transition-colors">Terms of Service</a></li>
+                            <li><a href="#" class="hover:text-blue-600 transition-colors">Sitemap</a></li>
+                            <li><a href="#" class="hover:text-blue-600 transition-colors">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-[40%] px-5 py-2 flex flex-col gap-3">
+                    <h3 class="capitalize text-[2rem] pb-1 border-b-1 border-white text-white">keep in touch</h3>
+                    <div class="flex gap-2 align-center ">
+                        <img src="./images/icons8-map-50 (1).png" alt="facebook" class="w-[2rem] h-[2rem]">
+                        <p class="text-gray-400 text-[1rem]">Office No. 3, Palmgrove Phase-2, Sambhajinagar Road,Devkar
+                            Panand. Kolhapur 416012</p>
+                    </div>
+                    <div class="flex gap-2 align-center ">
+                        <img src="./images/icons8-phone-50.png" alt="facebook" class="w-[2rem] h-[2rem]">
+                        <p class="text-gray-400 text-[1rem]">+91 883 025 6110</p>
+                    </div>
+                    <div class="flex gap-2 align-center ">
+                        <img src="./images/icons8-mail-50.png" alt="facebook" class="w-[2rem] h-[2rem]">
+                        <p class="text-gray-400 text-[1rem]">legitsoftservices@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-white text-center w-full">
                 <p class="text-[1.2rem]">© 2023 Legitsoft Lab. All rights reserved.</p>
-                <p class="text-[1rem]">Follow us on:
-                    <a href="#" class="text-blue-600 hover:underline">Facebook</a>,
-                    <a href="#" class="text-blue-600 hover:underline">Twitter</a>,
-                    <a href="#" class="text-blue-600 hover:underline">LinkedIn</a>
-                </p>    
+                <p class="text-[1rem]">Designed and Developed by <span class="text-blue-600">Legitsoft</span> Lab</p>
+                </p>
 
-    
-
+            </div>
+        </footer>
+        </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js" integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

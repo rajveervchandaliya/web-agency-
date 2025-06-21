@@ -17,3 +17,16 @@ body,html{
     font-family: 'myfont';
 } */
 
+.fade{
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.449),transparent);
+}
+.fade-r{
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to left, rgba(75, 68, 68, 0),transparent)
+}
+button:active{
+    transform: scale(0.9);
+}
