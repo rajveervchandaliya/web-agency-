@@ -29,4 +29,22 @@ body,html{
 }
 button:active{
     transform: scale(0.9);
+    cursor: pointer;
 }
+.active{
+    color: blue;
+}
+
+
+.credit-card {
+  position: relative;
+ 
+}
+
+.glare {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+} 
