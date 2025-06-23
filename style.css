@@ -49,3 +49,13 @@ button:active{
   top: 0;
 }
 
+
+/* Hide y-scrollbar for the form itself */
+form {
+  overflow-y: hidden;
+  scrollbar-width: none; /* Firefox */
+}
+form::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
